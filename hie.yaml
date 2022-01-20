@@ -1,0 +1,16 @@
+cradle:
+  multi:
+    # - path: "ignore/"
+    #   config: {cradle: {none: }}
+
+    - path: "src"
+      config: {cradle: {cabal: {component: "lib:patterns"}}}
+
+    - path: "app"
+      config: {cradle: {cabal: {component: "patterns:patterns-exe"}}}
+
+    - path: "test"
+      config: {cradle: {cabal: {component: "patterns:patterns-test"}}}
+
+    - path: "bench"
+      config: {cradle: {cabal: {component: "patterns:patterns-bench"}}}
